@@ -1,0 +1,12 @@
+C:\Users\Teska\Desktop\StudentApp\StudentApp.Models\bin\Debug\net5.0\StudentApp.Models.deps.json
+C:\Users\Teska\Desktop\StudentApp\StudentApp.Models\bin\Debug\net5.0\StudentApp.Models.dll
+C:\Users\Teska\Desktop\StudentApp\StudentApp.Models\bin\Debug\net5.0\ref\StudentApp.Models.dll
+C:\Users\Teska\Desktop\StudentApp\StudentApp.Models\bin\Debug\net5.0\StudentApp.Models.pdb
+C:\Users\Teska\Desktop\StudentApp\StudentApp.Models\obj\Debug\net5.0\StudentApp.Models.csproj.AssemblyReference.cache
+C:\Users\Teska\Desktop\StudentApp\StudentApp.Models\obj\Debug\net5.0\StudentApp.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Teska\Desktop\StudentApp\StudentApp.Models\obj\Debug\net5.0\StudentApp.Models.AssemblyInfoInputs.cache
+C:\Users\Teska\Desktop\StudentApp\StudentApp.Models\obj\Debug\net5.0\StudentApp.Models.AssemblyInfo.cs
+C:\Users\Teska\Desktop\StudentApp\StudentApp.Models\obj\Debug\net5.0\StudentApp.Models.csproj.CoreCompileInputs.cache
+C:\Users\Teska\Desktop\StudentApp\StudentApp.Models\obj\Debug\net5.0\StudentApp.Models.dll
+C:\Users\Teska\Desktop\StudentApp\StudentApp.Models\obj\Debug\net5.0\ref\StudentApp.Models.dll
+C:\Users\Teska\Desktop\StudentApp\StudentApp.Models\obj\Debug\net5.0\StudentApp.Models.pdb
