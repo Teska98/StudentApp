@@ -1,0 +1,40 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-secondary float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Course List
+  </button>
+<table class="table table-striped">
+    <thead>
+        <th>Id</th>
+        <th>Index Number</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Year Of Study</th>
+        <th>Student Status Id</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of studentList$|async">
+            <td>{{item.id}}</td>
+            <td>{{item.indexNumber}}</td>
+            <td>{{item.firstName}}</td>
+            <td>{{item.lastName}}</td>
+            <td>{{item.yearOfStudy}}</td>
+            <td>{{item.studentStatusId}}</td>
+        </tr>
+    </tbody>
+</table>
+
+ <!-- Course button -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Course List</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p *ngFor="let type of courseList$|async">{{type.id}} - {{type.courseName}}</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
