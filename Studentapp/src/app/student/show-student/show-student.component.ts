@@ -15,23 +15,41 @@ export class ShowStudentComponent implements OnInit {
   
 
   //Map to display data associate with foreign key
-  courseListMap:Map<number, string> = new Map()
+  studentStatusMap:Map<number, string> = new Map()
 
   constructor(private service:StudentApiService) { }
 
   ngOnInit(): void {
     this.studentList$ = this.service.getStudentList();
     this.courseList$ = this.service.getCourseList();
-    this.refreshcourseListMap();
+    this.refreshstudentStatusMap();
   }
 
-  refreshcourseListMap() {
+  modalTitle:string = '';
+  activateAddEditStudentComponent:boolean = false;
+  student:any;
+
+  modalAdd() {
+    this.student = {
+      id:0,
+      ime:null,
+      prezime:null,
+      brojindexa:null,
+      godinaStudija:null,
+      statusStudentaId:null
+    }
+    this.modalTitle = "Add Student";
+    this.activateAddEditStudentComponent = true;
+  }
+
+
+  refreshstudentStatusMap() {
     this.service.getCourseList().subscribe((data: string | any[]) => {
-      this.courseList = data;
+      this.studentList = data;
 
       for(let i = 0; i < data.length; i++)
       {
-        this.courseListMap.set(this.courseList[i].id, this.courseList[i].courseName);
+        this.studentStatusMap.set(this.studentList[i].id, this.studentList[i].studentName);
       }
     })
   }

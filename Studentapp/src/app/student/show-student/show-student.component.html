@@ -1,7 +1,13 @@
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-secondary float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <!-- Add Student -->
+  <button type="button" class="btn btn-primary float-end m-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop" (click)="modalAdd()">
+    Add student
+  </button>
+  
+  <!-- course info-->
+<button type="button" class="btn btn-secondary float-end m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
     Course List
   </button>
+
 <table class="table table-striped">
     <thead>
         <th>Id</th>
@@ -18,12 +24,12 @@
             <td>{{item.firstName}}</td>
             <td>{{item.lastName}}</td>
             <td>{{item.yearOfStudy}}</td>
-            <td>{{item.studentStatusId}}</td>
+            <td>{{studentStatusMap.get(item.studentStatusId)}}</td>
         </tr>
     </tbody>
 </table>
 
- <!-- Course button -->
+ <!-- Show course info button -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -38,3 +44,19 @@
       </div>
     </div>
   </div>
+
+  
+
+<!-- Add new Cours -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">{{modalTitle}}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <app-add-edit-student [student]="student"></app-add-edit-student>
+    </div>
+  </div>
+</div>
